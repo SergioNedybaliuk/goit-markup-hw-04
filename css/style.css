@@ -472,6 +472,28 @@ ol {
   border: 1px solid var(--grey-company-border);
   border-radius: 4px;
 }
+
+.customers {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customers-a {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--grey-company-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-company-border);
+}
+
+.customers-a:hover,
+.customers-a:focus {
+  border-color: var(--filter-color);
+}
+
 /* FOOTER */
 .footer-group {
   display: flex;
