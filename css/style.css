@@ -7,6 +7,7 @@
   --filter-bg-color: #f4f4fd;
   --filter-color: #404bbf;
   --cornflower-bg: #e7e9fc;
+  --grey-company-border: #8e8f99;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -109,8 +110,22 @@ ol {
 
 /* відступ у секціях*/
 
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/people-office.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .section {
-  background-color: var(--primary-color-tittle);
   padding: 188px 0;
 }
 .sec-one {
@@ -186,6 +201,7 @@ ol {
   letter-spacing: 0.02em;
   color: var(--secondary-color-tittle);
   margin-top: 0;
+  margin-bottom: 8px;
 }
 .sec-h-two {
   font-weight: 500;
@@ -408,4 +424,52 @@ ol {
   padding: 32px 16px;
   border: 1px solid var(--filter-first-color);
   border-top: none;
+}
+
+/* SVG */
+.icons-features {
+  margin: 24px 100px;
+  background: var(--filter-bg-color);
+  border-radius: 4px;
+}
+
+.social-group {
+  display: flex;
+  gap: 24px;
+}
+
+/* .social {
+} */
+
+.customers-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-company {
+  padding: 16px 32px;
+  border: 1px solid var(--grey-company-border);
+  border-radius: 4px;
+}
+/* FOOTER */
+.footer-group {
+  display: flex;
+  gap: 24px;
+}
+
+.under-social {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-whte-color);
+  padding-bottom: 16px;
+}
+
+.footer-box {
+  display: flex;
+}
+.left {
+  margin-left: 120px;
 }
