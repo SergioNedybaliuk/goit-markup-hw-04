@@ -484,7 +484,8 @@ ol {
 .customers-company {
   padding: 16px 32px;
   border: 1px solid var(--grey-company-border);
-  border-radius: 4px;
+
+  fill: currentColor;
 }
 
 .customers {
@@ -505,6 +506,11 @@ ol {
 
 .customers-a:hover,
 .customers-a:focus {
+  border-color: var(--filter-color);
+}
+
+.customers-company:hover,
+.customers-company:focus {
   border-color: var(--filter-color);
 }
 
